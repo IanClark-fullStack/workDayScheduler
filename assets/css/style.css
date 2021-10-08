@@ -1,3 +1,4 @@
+/* Applied CSS Variables for Color Scheme and Font Choices */
 :root {
   --blue: #0000ff;
   --muted: #a9b5b4;
@@ -6,81 +7,69 @@
   --bit-Font: VT323, monospace; 
 }
 
+/*  Overall Font Display */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--throw-back-title);
   font-size: 16px;
   line-height: 1;
 }
 
-
+/* Default TextArea Overwrite */
 textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
+  border-bottom: #000000 1px solid;
   padding: 10px;
 }
-
+/* Styles for Header */
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  font-family: var(--throw-back-title);
+  font-family: var(--bit-Font);
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
-#hour {
+/* Hours Column styles */
+.hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
   font-family: var(--bit-Font);
-  font-size: 3.7em;
+  font-size: 3.2em;
 }
-
-#past {
+/* Class to Dynamically change Colors */
+.past {
   background-color: var(--muted);
   color:var(--blue);
 }
-
-#present {
+/* Class to Dynamically change Colors */
+.present {
   background-color: var(--bright);
   color: var(--blue);
 }
-
-#future {
+/* Class to Dynamically change Colors */
+.future {
   background-color: var(--blue);
   color: white;
 }
-
-#saveBtn {
-  border: 0px solid black;
+/* Removed Border */
+.saveBtn {
+  border: 0px; 
   background-color: rgba(169 181 180 / 0.18%);
   color: white;
 }
-#saveBtn::before{
+/* Add a Lil Floppy Disk */
+.saveBtn::before{
   content: url('../images/Floppy-disk.png');
 }
-
-#saveBtn:hover {
-  font-size: 20px;
+/* Add a Lil Animation on Hover */
+.saveBtn:hover {
+  font-size: 28px;
   background-color: rgba(169 181 180 / 0.88%);
   transition: all 0.3s ease-in-out;
 }

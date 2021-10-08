@@ -36,6 +36,9 @@ var endOfDay = moment(new Date(moment().set({'hour': 5, 'minute': 00, 'second': 
 var dayToday = $('#currentDay');
 dayToday.text(moment().format("dddd, MMMM Do YYYY"));
 var timeSlot = $('#time-slot');
+var displayTime = $('<h4>')
+displayTime.text(currentExactTime);
+dayToday.append(displayTime);
 
 
 
