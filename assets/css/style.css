@@ -1,8 +1,17 @@
+:root {
+  --blue: #0000ff;
+  --muted: #a9b5b4;
+  --bright: #ff6961;
+  --throw-back-title: 'Apple Garamond Light', serif;
+  --bit-Font: VT323, monospace; 
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
+
 
 textarea {
   background: transparent;
@@ -19,6 +28,7 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  font-family: var(--throw-back-title);
 }
 
 .description {
@@ -28,6 +38,7 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+
 }
 
 .row {
@@ -36,36 +47,40 @@ textarea {
   border-top: 1px solid white;
 }
 
-.hour {
+#hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-family: var(--bit-Font);
+  font-size: 3.7em;
 }
 
-.past {
-  background-color: #d3d3d3;
+#past {
+  background-color: var(--muted);
+  color:var(--blue);
+}
+
+#present {
+  background-color: var(--bright);
+  color: var(--blue);
+}
+
+#future {
+  background-color: var(--blue);
   color: white;
 }
 
-.present {
-  background-color: #ff6961;
+#saveBtn {
+  border: 0px solid black;
+  background-color: rgba(169 181 180 / 0.18%);
   color: white;
 }
-
-.future {
-  background-color: #77dd77;
-  color: white;
+#saveBtn::before{
+  content: url('../images/Floppy-disk.png');
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
-}
-
-.saveBtn i:hover {
+#saveBtn:hover {
   font-size: 20px;
+  background-color: rgba(169 181 180 / 0.88%);
   transition: all 0.3s ease-in-out;
 }
