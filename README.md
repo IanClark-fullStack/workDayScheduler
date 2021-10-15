@@ -15,7 +15,7 @@ Application Purpose: Avoid saving your todo's on your local machine. Instead, le
 ![image](https://user-images.githubusercontent.com/90655370/136501232-a0016bdf-d81d-4bed-83e4-084e45738297.png)
 
 ## License 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/IanClark-fullStack/workDayScheduler/blob/main/LICENSE)
 
 __ 
 
